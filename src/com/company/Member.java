@@ -24,6 +24,10 @@ public class Member {
        this.number = number;
     }
 
+    public int getMemNum(){
+        return number;
+    }
+
     //format and display
     public void dispAll(){
         System.out.println(
