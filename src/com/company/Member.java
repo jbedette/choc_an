@@ -8,6 +8,7 @@ public class Member {
     //Set<Services> serviceList;
 
     //initialize
+    /*
     Member(
             String name,
             String address,
@@ -23,7 +24,20 @@ public class Member {
        this.zip = zip;
        this.number = number;
     }
+    */
 
+
+    Member(String [] nameAddrCityState,
+            int zip,
+            int number
+    ) {
+        this.name = nameAddrCityState[0];
+        this.address = nameAddrCityState[1];
+        this.city = nameAddrCityState[2];
+        this.state = nameAddrCityState[3];
+        this.zip = zip;
+        this.number = number;
+    }
     public int getMemNum(){
         return number;
     }
@@ -33,5 +47,10 @@ public class Member {
         System.out.println(
                 name + "\n" + address + ", " + city + ", " + state + ", " + zip + '\n'
         );
+    }
+    //testing stuff
+    //todo: remove
+    public void dispMemNum(){
+        System.out.print(number + ' ');
     }
 }
