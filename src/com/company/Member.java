@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class Member {
-    String name, address, city, state, zip, number;
+    String name, address, city, state, zip, number, valid;
 
     //set will be set up later
     //Set<Services> serviceList;
@@ -16,7 +16,8 @@ public class Member {
     //initialize
     Member(String [] nameAddrCityState,
             String zip,
-            String number
+            String number,
+            String valid
     ) {
         this.name = nameAddrCityState[0];
         this.address = nameAddrCityState[1];
@@ -24,17 +25,20 @@ public class Member {
         this.state = nameAddrCityState[3];
         this.zip = zip;
         this.number = number;
+        this.valid = valid;
     }
 
     public String getMemNum(){
         return number;
     }
 
+    public String getMemValid() { return valid; }
+
 
     //format and display
     public void dispAll(){
         System.out.println(
-                name + "\n" + address + ", " + city + ", " + state + ", " + zip + '\n' + number+'\n'
+                name + "\n" + address + ", " + city + ", " + state + ", " + zip + '\n' + number + " " + valid +'\n'
         );
     }
 
@@ -47,4 +51,6 @@ public class Member {
         Path path = Paths.get("src/members.txt");
         Files.write(path, textToAppend.getBytes(), StandardOpenOption.APPEND);
     }
+
+
 }

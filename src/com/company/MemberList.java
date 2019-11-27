@@ -48,10 +48,11 @@ public class MemberList {
 
             String zip = memScan.next();
             String num = memScan.next();
+            String valid = memScan.next();
 
             String [] toClean = new String[]{name,address,city,state};
 
-            Member temp = new Member(Utility.sanitizeReadWrite(true,toClean),zip,num);
+            Member temp = new Member(Utility.sanitizeReadWrite(true,toClean),zip,num,valid);
             list.add(temp);
         }
 
@@ -60,7 +61,7 @@ public class MemberList {
         memScan.close();
 
         //
-        demo();
+        //demo();
         //
     }
 
@@ -71,6 +72,8 @@ public class MemberList {
             Richard_Morin 36_Waverly_Ave. Springfield OR 12345 999999999
             Monty_Flavio 69_Party_Ln. Portland Or 97201 123456789
     */
+
+    /*
         dispAll();
         System.out.println("=========");
         addMember("aaaa", "aaaa", "aaaa", "aaaa", "00000");
@@ -79,6 +82,7 @@ public class MemberList {
         removeMem("999999999");
         dispAll();
         writeOutList();
+        */
     }
 
 
@@ -88,6 +92,31 @@ public class MemberList {
         while (out.hasNext()){
             out.next().dispAll();
         }
+    }
+
+    /* Yuriy */
+    // Verify if a member is in the system and is valid.
+    public String verifyMem(long other){
+        Iterator<Member> nums = list.iterator();
+        String verify = "Invalid Member"; // member # not found
+        String comp = Long.toString(other);
+
+        while(nums.hasNext()){
+            Member temp = nums.next();
+            // member # exists and member is valid
+            if(comp.equals(temp.getMemNum())
+                    && temp.getMemValid().equals("True")) {
+                verify = "Validated";
+                return verify;
+            }
+            // member exists but is not valid
+            if(comp.equals(temp.getMemNum())
+                    && temp.getMemValid().equals("False")) {
+                verify = "Member Suspended";
+                return verify;
+            }
+        }
+        return verify;
     }
 
     /*
@@ -103,7 +132,7 @@ public class MemberList {
     }
     */
 
-    public void addMember(String name, String address, String city, String state, String zip){
+    public void addMember(String name, String address, String city, String state, String zip, String valid){
         //todo: make better
         //create mem number
         //I think i'm gonna need to keep these Integers.to string, I want the concat
@@ -132,7 +161,7 @@ public class MemberList {
 
         Set existingMemNums = getExistingMemNums();
         if(!existingMemNums.contains(num)) {
-            Member temp = new Member(in, zip, num);
+            Member temp = new Member(in, zip, num, valid);
             list.add(temp);
         }
     }
