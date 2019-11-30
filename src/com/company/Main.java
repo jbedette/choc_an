@@ -99,7 +99,8 @@ public class Main {
                         System.out.println("Not an active member\n");
                     break;
                 case(4):
-                    System.out.print("choice 4\n");
+                    System.out.println("Provider Directory: \n");
+                    serviceList.dispAll();
                     break;
             }
         }while(choice != 5);
