@@ -142,16 +142,16 @@ public class MemberList {
         //than 9 digits and parsing an int from from there
         String num = (
                 Integer.toString((int)name.charAt(0)) +
-                Integer.toString((int)address.charAt(0)) +
-                Integer.toString((int)city.charAt(0)) +
+                        Integer.toString((int)address.charAt(0)) +
+                        Integer.toString((int)city.charAt(0)) +
 
-                Integer.toString((int)state.charAt(1)) +
-                Integer.toString((int)state.charAt(0)) +
-                Integer.toString((int)name.charAt(1)) +
+                        Integer.toString((int)state.charAt(1)) +
+                        Integer.toString((int)state.charAt(0)) +
+                        Integer.toString((int)name.charAt(1)) +
 
-                Integer.toString((int)address.charAt(2)) +
-                Integer.toString((int)name.charAt(name.length()-1)) +
-                Integer.toString((int)city.charAt(city.length()-1))).substring(0,9);
+                        Integer.toString((int)address.charAt(2)) +
+                        Integer.toString((int)name.charAt(name.length()-1)) +
+                        Integer.toString((int)city.charAt(city.length()-1))).substring(0,9);
 
         String [] in = new String[]{name,address,city,state};
 
@@ -183,11 +183,11 @@ public class MemberList {
     //removes it from the set
     public void removeMem(String targMemNum){
         Iterator<Member> toRemove = list.iterator();
-            while (toRemove.hasNext()){
-                if (toRemove.next().getMemNum().equals(targMemNum)){
-                    toRemove.remove();
-                }
+        while (toRemove.hasNext()){
+            if (toRemove.next().getMemNum().equals(targMemNum)){
+                toRemove.remove();
             }
+        }
     }
 
     public void writeOutList() {
