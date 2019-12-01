@@ -9,33 +9,69 @@ package com.company;
      */
 
 import java.io.*;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
 public class ProviderList {
     Set list;
-    String name, id;
+
     ProviderList(){
         Scanner memScan = null;
         try {
             memScan = new Scanner(new File("src/providers.txt"));
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+           e.printStackTrace();
         }
+        //switch to storing data somewhere
+        list = new HashSet<Provider>();
         //read file, delim=' ', clean
         while (memScan.hasNext()) {
-            //switch to storing data somewhere
-            System.out.println(memScan.next() + memScan.next());
+            String name = memScan.next();
+            String address = memScan.next();
+            String city = memScan.next();
+            String state = memScan.next();
+
+            String zip = memScan.next();
+            String num = memScan.next();
+
+            Provider temp = new Provider(name, num, address, city, state, zip);
+            list.add(temp);
         }
+
         memScan.close();
-        providerMenu();
     }
 
     public void providerMenu() {
         Scanner scanner = new Scanner(new InputStreamReader(System.in));
         System.out.print("Welcome to the provider portal,\nplease enter your provider number:\n");
         String in = scanner.nextLine();
-        //compare against list
+        if (logIn(in)) {
+            System.out.println("What would you like to do?");
+        } else {
+            System.out.println("Sorry, your Provider number was invalid");
+        }
+    }
+
+    public boolean logIn(String memNumber){
+
+        Iterator<Provider> out = list.iterator();
+        while (out.hasNext()){
+            Provider temp = out.next();
+            if(memNumber.equals(temp.getNumber())){
+                System.out.println("Welcome " + temp.getName());
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void display(){
+          Iterator<Provider> out = list.iterator();
+        while (out.hasNext()){
+            out.next().display();
+        }
     }
 }
