@@ -19,6 +19,12 @@ public class Main {
         /*
          *   TESTING SERVICES REMOVE LATER
          */
+        //Provider newProvider = new Provider("aa", "bb", "cc", "dd", "ee", "ff");
+        //newProvider.display();
+        ProviderList newProviderList = new ProviderList();
+        //newProviderList.display();
+        //newProviderList.providerMenu();
+
         ServiceList serviceList = new ServiceList();
         /*
         serviceList.dispAll();
@@ -62,7 +68,7 @@ public class Main {
 
             switch (choice){
                 case(1):
-                    System.out.print("choice 1\n");
+                    newProviderList.providerMenu();
                     break;
                 case(2):
                     System.out.println("Enter member number to lookup: ");
