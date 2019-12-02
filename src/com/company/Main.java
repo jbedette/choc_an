@@ -3,80 +3,68 @@ package com.company;
 
 import java.util.Scanner;
 
+import static com.company.Menu.*;
+
 public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int choice;     // menu option
+        int choice = 0;     // menu option
         String result;  // validated, not validated, suspended
         long m_num;     // member number
         String s_num;   // service number
+        int start = 0;
 
         //Populate the member list
         MemberList memberlist = new MemberList();
-        //memberlist.dispAll();
-
-        /*
-         *   TESTING SERVICES REMOVE LATER
-         */
-        //Provider newProvider = new Provider("aa", "bb", "cc", "dd", "ee", "ff");
-        //newProvider.display();
         ProviderList newProviderList = new ProviderList();
-        //newProviderList.display();
-        //newProviderList.providerMenu();
-
         ServiceList serviceList = new ServiceList();
-        /*
-        serviceList.dispAll();
-        String testing;
-        testing = serviceList.getServiceName("123456");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("1234567");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("123457");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("123458");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123456");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("1234567");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123457");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123458");
-        System.out.println(testing);
-        ServicesProvidedList servicesProvided = new ServicesProvidedList();
-        //servicesProvided.dispAll();
-        servicesProvided.dispByProviderNumber("333333333");
-        testing = servicesProvided.getServicePrice("333333333");
-        System.out.println(testing);
-        System.out.println("\n");
-        */
-        /*
-         *   END OF TESTING SERVICES
-         */
 
-        do{
-            // Provider log in could be done first then options...
-            System.out.println("1: Log in with provider number");
-            System.out.println("2: Validate member"); // validated, not validated, suspended
-            System.out.println("3: Bill member"); // use service # to bill member
-            System.out.println("4: Provider directory");
-            System.out.println("5: Exit");
-
-            choice = input.nextInt();
-
+        while(true){
+            switch (start){
+                case(0): {
+                    start = menu();
+                    break;
+                }
+                case(1):{
+                    choice = managerMenu();
+                    break;
+                }
+                case(2):{
+                    choice = providerMenu();
+                    break;
+                }
+                default:{
+                    System.out.println("Goodbye");
+                    return;
+                }
+            }
             switch (choice){
-                case(1):
-                    newProviderList.providerMenu();
+                case(0):
                     break;
                 case(2):
+                    //manager add
+                    memberlist.addMember();
+                    break;
+                case(3):
+                    //manager del
+                    memberlist.removeMem();
+                    break;
+                case(4):
+                    //manager report
+                    break;
+                case(6):
+                    newProviderList.providerMenu();
+                    break;
+                case(1):
+                    //manager verify
+                case(7):
                     System.out.println("Enter member number to lookup: ");
                     m_num = input.nextLong();
                     result = memberlist.verifyMem(m_num);
                     System.out.print(result + "\n" + "\n");
                     break;
-                case(3):
+                case(8):
                     System.out.println("Enter member number to lookup: ");
                     m_num = input.nextLong();
                     result = memberlist.verifyMem(m_num);
@@ -104,12 +92,15 @@ public class Main {
                     else
                         System.out.println("Not an active member\n");
                     break;
-                case(4):
+                case(9):
                     System.out.println("Provider Directory: \n");
                     serviceList.dispAll();
                     break;
+                default:
+                    start = 0;
+                    break;
             }
-        }while(choice != 5);
-
+            System.out.println(start + " " + choice);
+        }
     }
 }
