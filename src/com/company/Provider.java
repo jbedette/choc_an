@@ -6,9 +6,10 @@ import java.util.*;
 
 public class Provider {
 
-    String name, number, streetAddress, city, state, zip;
+    String name, streetAddress, city, state, zip;
+    long number;
 
-    Provider(String name, String number, String streetAddress, String city, String state, String zip) {
+    Provider(String name, long number, String streetAddress, String city, String state, String zip) {
         this.name = name;
         this.number = number;
         this.streetAddress = streetAddress;
@@ -26,7 +27,7 @@ public class Provider {
         System.out.println("Zip: " + this.zip);
     }
 
-    public String getNumber(){
+    public long getNumber(){
         return number;
     }
 
