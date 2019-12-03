@@ -1,6 +1,4 @@
 package com.company;
-
-
 import java.util.Scanner;
 
 public class Main {
@@ -14,48 +12,12 @@ public class Main {
 
         //Populate the member list
         MemberList memberlist = new MemberList();
-        //memberlist.dispAll();
 
-        /*
-         *   TESTING SERVICES REMOVE LATER
-         */
-        //Provider newProvider = new Provider("aa", "bb", "cc", "dd", "ee", "ff");
-        //newProvider.display();
         ProviderList newProviderList = new ProviderList();
-        //newProviderList.display();
-        //newProviderList.providerMenu();
 
         ServiceList serviceList = new ServiceList();
-        /*
-        serviceList.dispAll();
-        String testing;
-        testing = serviceList.getServiceName("123456");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("1234567");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("123457");
-        System.out.println(testing);
-        testing = serviceList.getServiceName("123458");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123456");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("1234567");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123457");
-        System.out.println(testing);
-        testing = serviceList.getServicePrice("123458");
-        System.out.println(testing);
-        ServicesProvidedList servicesProvided = new ServicesProvidedList();
-        //servicesProvided.dispAll();
-        servicesProvided.dispByProviderNumber("333333333");
-        testing = servicesProvided.getServicePrice("333333333");
-        System.out.println(testing);
-        System.out.println("\n");
-        */
-        /*
-         *   END OF TESTING SERVICES
-         */
 
+        // (1) manager ability to add/delete members, run reports. Menu?
         do{
             // Provider log in could be done first then options...
             System.out.println("1: Log in with provider number");
@@ -82,9 +44,9 @@ public class Main {
                     result = memberlist.verifyMem(m_num);
                     char correct = 'n';
                     if(result.equals("Validated")) {
-                        // MM-DD-YYY
+                        // MM-DD-YYY requires input of dashes by user right now, maybe change later?
                         System.out.println("Enter Date (MM-DD-YYY): ");
-                        String date = input.next(); // used for record later
+                        String date = input.next(); // used for Transaction later
                         do {
                             System.out.println("Provider Directory: \n");
                             serviceList.dispAll();
@@ -96,10 +58,10 @@ public class Main {
                             correct = input.next().charAt(0);
                         }while(correct == 'n' || correct == 'N');
                         System.out.println(serviceList.getServicePrice(s_num) + " charged to member " + m_num + "\n");
-                        /*
-                         * Service record can now be written. Should have all info needed. The member account
-                         * will need to be charged as well?
-                         */
+                        //!!! p_num "provider" will need to be replaced with actual provider's name
+                        Transaction t_record = new Transaction(date, "provider", Long.toString(m_num), s_num);
+                        t_record.display();
+                        //!!! Write Transaction's data to file (service/transaction record)
                     }
                     else
                         System.out.println("Not an active member\n");
