@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Scanner;
 
 public class Member {
     String name, address, city, state, zip, number, valid;
@@ -23,6 +24,16 @@ public class Member {
         this.address = nameAddrCityState[1];
         this.city = nameAddrCityState[2];
         this.state = nameAddrCityState[3];
+        this.zip = zip;
+        this.number = number;
+        this.valid = valid;
+    }
+
+    Member(String name, String address, String city, String state, String zip, String number, String valid){
+        this.name = name;
+        this.address = address;
+        this.city = city;
+        this.state = state;
         this.zip = zip;
         this.number = number;
         this.valid = valid;
@@ -51,6 +62,5 @@ public class Member {
         Path path = Paths.get("src/members.txt");
         Files.write(path, textToAppend.getBytes(), StandardOpenOption.APPEND);
     }
-
 
 }

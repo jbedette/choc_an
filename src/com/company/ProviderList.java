@@ -34,7 +34,7 @@ public class ProviderList {
             String state = memScan.next();
 
             String zip = memScan.next();
-            String num = memScan.next();
+            long num = memScan.nextInt();
 
             Provider temp = new Provider(name, num, address, city, state, zip);
             list.add(temp);
@@ -43,28 +43,32 @@ public class ProviderList {
         memScan.close();
     }
 
-    public void providerMenu() {
+    public int providerMenu() {
         Scanner scanner = new Scanner(new InputStreamReader(System.in));
-        System.out.print("Welcome to the provider portal,\nplease enter your provider number:\n");
-        String in = scanner.nextLine();
-        if (logIn(in)) {
-            System.out.println("What would you like to do?");
-        } else {
-            System.out.println("Sorry, your Provider number was invalid");
-        }
+
+        System.out.println("What would you like to do?");
+        System.out.println("1: Validate member"); // validated, not validated, suspended
+        System.out.println("2: Bill member"); // use service # to bill member
+        System.out.println("3: Provider directory");
+        System.out.println("4. Exit");
+
+        int choice = scanner.nextInt();
+        return choice;
+
     }
 
-    public boolean logIn(String memNumber){
+    public boolean logIn(long memNumber){
 
         Iterator<Provider> out = list.iterator();
         while (out.hasNext()){
             Provider temp = out.next();
-            if(memNumber.equals(temp.getNumber())){
+            if(memNumber == temp.getNumber()){
                 System.out.println("Welcome " + temp.getName());
                 return true;
             }
         }
 
+        System.out.println("Sorry, that Provider Number was not valid.");
         return false;
     }
 
