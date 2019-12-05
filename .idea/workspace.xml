@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../CS_300_Midterm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CS_300_Midterm.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MemberList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575234162890" />
   </component>
   <component name="RunManager">
@@ -75,21 +76,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1575578256892">
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1575579516193">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256892" />
-    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1575578256891">
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575579516193" />
+    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1575579516191">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256891" />
-    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1575578256891">
+    <state width="1238" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575579516191" />
+    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1575579516190">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256891" />
-    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1575578256892">
+    <state width="1238" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575579516190" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1575579516191">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256892" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575579516191" />
   </component>
 </project>
