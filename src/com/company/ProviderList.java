@@ -38,9 +38,9 @@ public class ProviderList {
             int numOfSev = memScan.nextInt();
             double totalFees = memScan.nextDouble();
 
-            String [] toClean = new String[]{name};
+            String [] toClean = new String[]{name, address};
 
-            Provider temp = new Provider(Utility.sanitizeReadWrite(true, toClean), num, address, city, state, zip, numOfSev, totalFees);
+            Provider temp = new Provider(Utility.sanitizeReadWrite(true, toClean), num, city, state, zip, numOfSev, totalFees);
             list.add(temp);
         }
 
