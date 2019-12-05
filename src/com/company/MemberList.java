@@ -94,6 +94,18 @@ public class MemberList {
         }
     }
 
+    public String getName(String m_num){
+        Iterator<Member> member = list.iterator();
+        while (member.hasNext()){
+            Member temp = member.next();
+            if(temp.getMemNum().equals(m_num)){
+                return temp.name;
+            }
+        }
+
+        return null;
+    }
+
     /* Yuriy */
     // Verify if a member is in the system and is valid.
     public String verifyMem(long other){

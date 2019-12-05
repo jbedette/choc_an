@@ -1,13 +1,17 @@
 package com.company;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
         int choice;     // menu option
         String result;  // validated, not validated, suspended
+        String p_num;   // Provider Number
+        String p_name;  // provider name
         long m_num;     // member number
+        String m_name;  // member name
         String s_num;   // service number
 
         //Populate the member list
@@ -30,7 +34,7 @@ public class Main {
 
             switch (choice){
                 case(1):
-                    newProviderList.providerMenu();
+                    p_num = newProviderList.providerMenu();
                     break;
                 case(2):
                     System.out.println("Enter member number to lookup: ");
@@ -39,6 +43,8 @@ public class Main {
                     System.out.print(result + "\n" + "\n");
                     break;
                 case(3):
+                    p_num = newProviderList.providerMenu();
+                    p_name = newProviderList.getName(p_num);
                     System.out.println("Enter member number to lookup: ");
                     m_num = input.nextLong();
                     result = memberlist.verifyMem(m_num);
@@ -59,9 +65,14 @@ public class Main {
                         }while(correct == 'n' || correct == 'N');
                         System.out.println(serviceList.getServicePrice(s_num) + " charged to member " + m_num + "\n");
                         //!!! p_num "provider" will need to be replaced with actual provider's name
-                        Transaction t_record = new Transaction(date, "provider", Long.toString(m_num), s_num);
+                        Transaction t_record = new Transaction(date, p_num, Long.toString(m_num), s_num);
                         t_record.display();
                         //!!! Write Transaction's data to file (service/transaction record)
+                        m_name = memberlist.getName(Long.toString(m_num));
+                        p_name = newProviderList.getName(p_num);
+                        newProviderList.increaseConsult(p_num);
+                        newProviderList.increaseFees(p_num, serviceList.getServicePrice(s_num));
+                        newProviderList.providerReport(p_name, p_num, t_record, serviceList.getServicePrice(s_num), m_name);
                     }
                     else
                         System.out.println("Not an active member\n");
