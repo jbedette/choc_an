@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        //Summary.getSummary();
         Scanner input = new Scanner(System.in);
         int choice;     // menu option
         String result;  // validated, not validated, suspended

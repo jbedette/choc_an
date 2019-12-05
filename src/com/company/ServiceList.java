@@ -64,6 +64,10 @@ public class ServiceList {
         }
         return "no such service exists";
     }
+
+    public Set getList(){
+        return list;
+    }
 /*
     public void addService(String number, String name){
         Service temp = new Service(number, name);

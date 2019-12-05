@@ -37,4 +37,11 @@ public class Provider {
     public String getName(){
         return name;
     }
+
+    public int getNumOfServ(){
+        return numOfServ;
+    }
+    public double getTotalFees(){
+        return totalFees;
+    }
 }

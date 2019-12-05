@@ -86,6 +86,7 @@ public class MemberList {
     }
 
 
+
     public void dispAll(){
 
         Iterator<Member> out = list.iterator();
@@ -224,5 +225,8 @@ public class MemberList {
     private void eraseOldFile()throws IOException{
         BufferedWriter writer = new BufferedWriter(new FileWriter("src/members.txt"));
         writer.close();
+    }
+    public Set getList(){
+        return list;
     }
 }

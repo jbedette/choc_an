@@ -129,4 +129,18 @@ public class ProviderList {
 
         writer.close();
     }
+    public Triple[] summReport(){
+        Triple [] out = new Triple[list.size()];
+        Iterator<Provider> itr = list.iterator();
+        int i = 0;
+        while(itr.hasNext()){
+            Provider temp = itr.next();
+            out[i] = new Triple(temp.getName(),temp.getNumOfServ(),temp.getTotalFees());
+        }
+        return out;
+    }
+
+    public Set getList(){
+        return list;
+    }
 }
