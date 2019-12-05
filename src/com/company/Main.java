@@ -72,7 +72,10 @@ public class Main {
                         p_name = newProviderList.getName(p_num);
                         newProviderList.increaseConsult(p_num);
                         newProviderList.increaseFees(p_num, serviceList.getServicePrice(s_num));
+                        //Write weekly provider report
                         newProviderList.providerReport(p_name, p_num, t_record, serviceList.getServicePrice(s_num), m_name);
+                        //Write weekly member report
+                        memberlist.memberReport(Long.toString(m_num), m_name, p_name, t_record);
                     }
                     else
                         System.out.println("Not an active member\n");

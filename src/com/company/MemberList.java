@@ -225,4 +225,25 @@ public class MemberList {
         BufferedWriter writer = new BufferedWriter(new FileWriter("src/members.txt"));
         writer.close();
     }
+
+    public void memberReport(String mNum, String mName, String pName, Transaction t_record)throws IOException{
+        //public void providerReport(String pName, String proNum, Transaction t_record, String fee, String memberName)throws IOException{
+        Iterator<Member> out = list.iterator();
+        //Written as member's name+ Member Report
+        BufferedWriter writer = new BufferedWriter(new FileWriter("src/" + mName + "MemberReport.txt", true));
+        while(out.hasNext()){
+            Member temp = out.next();
+            if(mNum.equals(temp.getMemNum())){
+                System.out.println("Writing to file...");
+                //Member name, number, address, city, state, zip
+                writer.write(temp.name + ' ' + temp.number + ' ' + temp.address + ' ' + temp.city + ' ' + temp.state + ' ' + temp.zip);
+                writer.write("\n");
+                //Service written date, date of service, provider name, service number
+                writer.write(t_record.curDateTime + ' ' + t_record.dateOfServ + ' ' + pName + ' ' + t_record.s_num);
+                writer.write("\n");
+            }
+        }
+
+        writer.close();
+    }
 }
