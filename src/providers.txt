@@ -1,5 +1,5 @@
-Kyle_Fixit 123_Bai_St. Portland OR 97204 987654321
-Monica_McDream 2712_Cups_Rd. Portland OR 97206 345678912
-Spot_Wilson 15_Wallet_Street Portland OR 97211 678912345
-Fred_Shaprio 167_Hiccup_Ln. Portland Or 97201 123456789
-Linda_Still 1533_Murry_Way Portland OR 97292 891234567
+Kyle_Fixit 123_Bai_St. Portland OR 97204 987654321 0 0.0
+Monica_McDream 2712_Cups_Rd. Portland OR 97206 345678912 0 0.0
+Spot_Wilson 15_Wallet_Street Portland OR 97211 678912345 0 0.0
+Fred_Shaprio 167_Hiccup_Ln. Portland Or 97201 123456789 0 0.0
+Linda_Still 1533_Murry_Way Portland OR 97292 891234567 0 0.0
