@@ -14,16 +14,12 @@ public class Main {
         String m_name;  // member name
         String s_num;   // service number
 
-        //Populate the member list
+        // Populate member, provider, sercvice lists
         MemberList memberlist = new MemberList();
-
         ProviderList newProviderList = new ProviderList();
-
         ServiceList serviceList = new ServiceList();
 
-        // (1) manager ability to add/delete members, run reports. Menu?
         do{
-            // Provider log in could be done first then options...
             System.out.println("1: Log in with provider number");
             System.out.println("2: Validate member"); // validated, not validated, suspended
             System.out.println("3: Bill member"); // use service # to bill member
@@ -64,12 +60,13 @@ public class Main {
                             correct = input.next().charAt(0);
                         }while(correct == 'n' || correct == 'N');
                         System.out.println(serviceList.getServicePrice(s_num) + " charged to member " + m_num + "\n");
-                        //!!! p_num "provider" will need to be replaced with actual provider's name
-                        Transaction t_record = new Transaction(date, p_num, Long.toString(m_num), s_num);
+                        Transaction t_record = new Transaction(date, p_name, Long.toString(m_num), s_num);
                         t_record.display();
-                        //!!! Write Transaction's data to file (service/transaction record)
+                        // Writing service/transaction record to transactionRecord.txt
+                        t_record.transactionReport();
+
                         m_name = memberlist.getName(Long.toString(m_num));
-                        p_name = newProviderList.getName(p_num);
+                        //p_name = newProviderList.getName(p_num);
                         newProviderList.increaseConsult(p_num);
                         newProviderList.increaseFees(p_num, serviceList.getServicePrice(s_num));
                         newProviderList.providerReport(p_name, p_num, t_record, serviceList.getServicePrice(s_num), m_name);
