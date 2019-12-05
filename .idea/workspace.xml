@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64729ce9-1ff6-4869-8dfa-ca92b23ada89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/choc_an/Fred ShaprioProviderReport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/choc_an/Kyle FixitProviderReport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/choc_an/SummaryReport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/choc_an/transactionRecord.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SummaryReport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Summary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Triple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS_300_Midterm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CS_300_Midterm.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/MemberList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/MemberList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Provider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ProviderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ServiceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ServiceList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ServiceProvided.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ServiceProvided.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/ServicesProvidedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/ServicesProvidedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ProviderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProviderList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -97,21 +75,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1575577903213">
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1575578256892">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575577903213" />
-    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1575577903211">
+    <state width="1238" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256892" />
+    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1575578256891">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575577903211" />
-    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1575577903211">
+    <state width="1238" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256891" />
+    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1575578256891">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575577903211" />
-    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1575577903211">
+    <state width="1238" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256891" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1575578256892">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575577903211" />
+    <state width="1238" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575578256892" />
   </component>
 </project>
