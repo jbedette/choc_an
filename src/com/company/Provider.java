@@ -10,7 +10,8 @@ public class Provider {
     int numOfServ;
     double totalFees;
 
-    Provider(String [] nameAddress, String number, String city, String state, String zip, int numofServ, double totalFees) {
+    Provider(String[] nameAddress, String number, String city, String state, String zip, int numofServ,
+             double totalFees) {
         this.name = nameAddress[0];
         this.number = number;
         this.streetAddress = nameAddress[1];
@@ -21,7 +22,7 @@ public class Provider {
         this.totalFees = totalFees;
     }
 
-    public void display(){
+    public void display() {
         System.out.println("Name: " + this.name);
         System.out.println("Number: " + this.number);
         System.out.println("Street Address: " + this.streetAddress);
@@ -30,11 +31,19 @@ public class Provider {
         System.out.println("Zip: " + this.zip);
     }
 
-    public String getNumber(){
+    public String getNumber() {
         return number;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
+    }
+
+    public int getNumOfServ() {
+        return numOfServ;
+    }
+
+    public double getTotalFees() {
+        return totalFees;
     }
 }
