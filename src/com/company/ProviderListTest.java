@@ -1,6 +1,6 @@
 package com.company;
 
-//import groovy.json.internal.IO;
+import groovy.json.internal.IO;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
