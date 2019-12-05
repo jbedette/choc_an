@@ -124,6 +124,7 @@ public class ProviderList {
                 writer.write(t_record.curDateTime + ' ' + t_record.dateOfServ + ' ' + memberName + ' ' + t_record.m_num + ' ' + t_record.s_num + ' ' + fee);
                 writer.write("\n");
                 writer.write(temp.numOfServ +  " " +  temp.totalFees);
+                writer.write("\n");
             }
         }
 
