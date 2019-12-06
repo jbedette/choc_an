@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64729ce9-1ff6-4869-8dfa-ca92b23ada89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/MemberListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/SummaryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/TransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS_300_Midterm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CS_300_Midterm.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/choc_an/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/choc_an/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProviderListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../320/4/lab4/lab4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,7 +42,18 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575234162890" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -84,26 +98,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="177" key="GridCell.Tab.0.bottom" timestamp="1575581157902">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1878" height="177" key="GridCell.Tab.0.bottom" timestamp="1575591061351">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@-1920.23.1920.1057" timestamp="1575591061351" />
     <state width="1238" height="177" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575581157902" />
-    <state width="1238" height="177" key="GridCell.Tab.0.center" timestamp="1575581157900">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1878" height="177" key="GridCell.Tab.0.center" timestamp="1575591061350">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@-1920.23.1920.1057" timestamp="1575591061350" />
     <state width="1238" height="177" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575581157900" />
-    <state width="1238" height="177" key="GridCell.Tab.0.left" timestamp="1575581157900">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1878" height="177" key="GridCell.Tab.0.left" timestamp="1575591061350">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@-1920.23.1920.1057" timestamp="1575591061350" />
     <state width="1238" height="177" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575581157900" />
-    <state width="1238" height="177" key="GridCell.Tab.0.right" timestamp="1575581157901">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1878" height="177" key="GridCell.Tab.0.right" timestamp="1575591061350">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@-1920.23.1920.1057" timestamp="1575591061350" />
     <state width="1238" height="177" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575581157901" />
     <state x="141" y="51" key="SettingsEditor" timestamp="1575579937461">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="51" key="SettingsEditor/-1920.23.1920.1057/0.23.1280.777@0.23.1280.777" timestamp="1575579937461" />
+    <state x="-1181" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1575591860001">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1181" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.23.1920.1057/0.23.1280.777@-1920.23.1920.1057" timestamp="1575591860001" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1575581084212">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
